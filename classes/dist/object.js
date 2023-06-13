@@ -1,0 +1,34 @@
+"use strict";
+class Account {
+    constructor(id, owner, _amount, _phone) {
+        this.id = id;
+        this.owner = owner;
+        this._amount = _amount;
+        this._phone = _phone;
+    }
+    deposit(amount) {
+        if (amount <= 0) {
+            console.log(`Please amount greater thAN 100..`);
+        }
+        this._amount += amount;
+    }
+    get amount() {
+        return this._amount;
+    }
+    get phone() {
+        return this._phone;
+    }
+    set phone(value) {
+        if (value < 0) {
+            console.log('Invalid number..');
+            return;
+        }
+        this._phone = value;
+    }
+}
+let account = new Account(1, 'Abhi', 700, 9934783);
+account.deposit(16800);
+console.log(account.amount);
+console.log(account.phone);
+account.phone = 676381783;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib2JqZWN0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL29iamVjdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsTUFBTSxPQUFPO0lBS1QsWUFBNEIsRUFBVyxFQUM1QixLQUFjLEVBQ2IsT0FBZ0IsRUFDaEIsTUFBZTtRQUhDLE9BQUUsR0FBRixFQUFFLENBQVM7UUFDNUIsVUFBSyxHQUFMLEtBQUssQ0FBUztRQUNiLFlBQU8sR0FBUCxPQUFPLENBQVM7UUFDaEIsV0FBTSxHQUFOLE1BQU0sQ0FBUztJQUkzQixDQUFDO0lBQ0QsT0FBTyxDQUFFLE1BQWU7UUFDcEIsSUFBSSxNQUFNLElBQUksQ0FBQyxFQUFFO1lBQ2IsT0FBTyxDQUFDLEdBQUcsQ0FBQyxrQ0FBa0MsQ0FBQyxDQUFDO1NBQ25EO1FBQ0QsSUFBSSxDQUFDLE9BQU8sSUFBSSxNQUFNLENBQUM7SUFDM0IsQ0FBQztJQUNELElBQUksTUFBTTtRQUNOLE9BQU8sSUFBSSxDQUFDLE9BQU8sQ0FBQTtJQUN2QixDQUFDO0lBQ0QsSUFBSSxLQUFLO1FBQ0wsT0FBTyxJQUFJLENBQUMsTUFBTSxDQUFDO0lBQ3ZCLENBQUM7SUFDRCxJQUFJLEtBQUssQ0FBQyxLQUFZO1FBQ2xCLElBQUksS0FBSyxHQUFHLENBQUMsRUFBRTtZQUNYLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQWtCLENBQUMsQ0FBQztZQUNoQyxPQUFPO1NBQ1Y7UUFDRCxJQUFJLENBQUMsTUFBTSxHQUFHLEtBQUssQ0FBQztJQUN4QixDQUFDO0NBQ0o7QUFFRCxJQUFJLE9BQU8sR0FBRyxJQUFJLE9BQU8sQ0FBQyxDQUFDLEVBQUMsTUFBTSxFQUFFLEdBQUcsRUFBRyxPQUFPLENBQUMsQ0FBQztBQUNuRCxPQUFPLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDO0FBRXZCLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxDQUFDO0FBQzVCLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDO0FBQzNCLE9BQU8sQ0FBQyxLQUFLLEdBQUcsU0FBUyxDQUFDIn0=
