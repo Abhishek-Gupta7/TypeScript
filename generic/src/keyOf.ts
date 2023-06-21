@@ -16,4 +16,4 @@ class Store2 <T>{
 
 let s2 = new Store2();
 s2.add({name : 'a' , price : 1});
-s2.findObj('name' , 'a'),
+// s2.findObj('name' , 'a'),
